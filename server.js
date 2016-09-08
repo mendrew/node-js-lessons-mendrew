@@ -1,14 +1,6 @@
-function User(name){
-    this.name = name;
-}
+require('./user');
 
-User.prototype.hello = function(who){
-    console.log("Hello, " + who.name);
-};
-
-var tom = new User("Tom");
-var tim = new User("Tim");
+var tom = new user.User("Tom");
+var tim = new user.User("Tim");
 
 tom.hello(tim);
-
-
